@@ -1,0 +1,143 @@
+﻿body{
+        font-family: "Helvetica", Georgia, sans-Serif;
+        display: block;
+        margin: 0;
+        background-image: url(Images/pic02.jpg);       
+    }
+    header{        
+        min-height: 50px;
+        width: 100%;
+        background-color: rgba(0,0,0,0.5);        
+    }
+    a{
+        display: inline-block;
+        padding-left: 20px;
+        padding-right: 20px;
+        color: #a4a4a4;        
+        min-height: 50px;
+        min-width: 30px;
+        text-align: center;
+        line-height: 50px;
+        font-size: 1.3em;
+        text-decoration: none;        
+    }
+    a:hover{
+        background-color: rgba(0,0,0,0.3);
+    }
+    h3{          
+        margin-bottom: 0;
+        color: aliceblue;
+    }
+    h4{         
+        margin-top: 0;
+        color: aliceblue;
+        margin-bottom: 5px;
+        font-weight: 300;
+        font-style: italic;
+    }
+    
+    .dpscalc{
+        display: inline-block;
+        position: absolute;
+        color: aliceblue;
+        right: 10px;
+        top: 10px;
+        min-height: 50px;
+        width: 500px;        
+    }
+    
+    table{
+        display: inline-block;
+        border-collapse:collapse;        
+        color: aliceblue;        
+        margin-left: 30px;
+    }
+    .maintable  th{
+        padding: 3px;        
+    }    
+    .maintablerow > td{
+        padding: 3px;
+        text-align: center;        
+        border-bottom: 1px solid gray;
+    }
+    .summarytable{
+        vertical-align: top;
+        text-align: left;
+        line-height: 1.5em;
+    }
+    .summarytablerow > td{
+        padding-left: 10px;
+    }
+    .summarytablerow > td:nth-child(odd){
+        font-weight: bold;
+    }
+    .trigger, .dps{
+        color: #b30000;
+        font-weight: 600;
+    }
+    .ehp{
+        color: #cc00cc;
+        font-weight: 600;
+    }
+    .wave{
+        background-color: #a4a4a4;
+    }
+    .maintablerow > .sleeper{
+        text-align: left;
+    }
+    
+    .none {
+        color: #595959;
+    }
+    .anomalycontainer{
+        display: inline-block;
+        position: relative;
+        background-color: rgba(0,0,0,0.7);
+        margin-top: 10px;
+        margin-left: 10px;
+        padding: 10px;
+        white-space: nowrap;
+    }
+    
+    .sleeperimg {        
+        vertical-align: middle;
+        width: 20px;
+        height: 20px;
+        margin-right: 3px;
+    }
+    
+    .icon{        
+        vertical-align: middle;
+        width: 25px;
+        height: 25px;
+        margin-right: 3px;   
+    } 
+    .popupimg{
+        display: none;
+        width: 64px;
+        height: 64px;
+        position: absolute;
+        z-index: 50;
+    }
+    
+    .dpsinput{
+        height: 35px;
+        font-size: 0.8em;
+        text-align: center;
+        background-color: aliceblue;
+        border: none;       
+    }
+    
+    .timearea {
+        resize: none;
+        vertical-align: middle;
+        font-family: "Helvetica", Georgia, sans-Serif;
+        font-size: 1.3em;
+        text-align:center;
+        color: black;
+        height: 30px;
+        width: 90px;
+        margin-left: 5px;        
+        background-color: aliceblue;
+    }
+    
