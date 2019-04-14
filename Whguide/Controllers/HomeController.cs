@@ -18,5 +18,10 @@ namespace Whguide.Controllers
         {
             return View();
         }
+
+        public ActionResult C2()
+        {
+            return View();
+        }
     }
 }

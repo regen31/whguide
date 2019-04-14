@@ -4,7 +4,8 @@ $('body').on('click', '.whclasslink', function (event) {
 
     var href = event.target.getAttribute('href');
 
-    $('.anomalycontainer').remove();
+    var articles = document.getElementsByClassName('anomalycontainer');
+    articles.remove();
 
     $.ajax({
         url: href,
@@ -44,6 +45,7 @@ $('body').on('mouseleave', '.sleeperimg', function (event) {
 
 //dps calculator
 function secondsToHms(d) {
+
     if (Number(d) && d != Infinity) {
 
         d = Number(d);
@@ -53,14 +55,18 @@ function secondsToHms(d) {
 
         var hDisplay = h + ':'
         var mDisplay = m + ':'
+        var sDisplay = s;
         if (m < 10) {
             mDisplay = '0' + mDisplay;
         }
-        var sDisplay = s;
+        if (s < 10) {
+            sDisplay = '0' + s;
+        }
+        
         return hDisplay + mDisplay + sDisplay;
     }
     else {
-        return 'Error';
+        return ' ';
     }
 };
 
@@ -83,4 +89,31 @@ $('body').on('keyup', '.dpsinput', function (event) {
         var areaid = areas[i].getAttribute('id');
         $('#' + areaid).text(time);
     }
+});
+
+
+//anomaly searching
+var anomaliesArr = [
+        "Forgotten Perimeter Coronation Platform",
+        "Forgotten Perimeter Power Array",
+        "Perimeter Ambush Point",
+]
+
+$('body').on('keyup', '#searchinput', function (event) {
+    var text = event.target.value;
+    $('.searchLi').remove();
+
+    if (text.length >= 3) {
+        $('.searchresult').show();
+        anomaliesArr.forEach(function (item, i, arr) {
+
+            if (item.toUpperCase().includes(text.toUpperCase())) {
+                $('#searchlist').append('<li class="searchLi"><a href =/Home/Search/' + item.replace(/\s/g, '') + '>' + item + '</a></li>');
+            }
+        });
+    }
+});
+
+$('body').on('focusout', '#searchinput', function (event) {
+    $('.searchresult').hide();
 });

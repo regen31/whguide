@@ -2,19 +2,21 @@
         font-family: "Helvetica", Georgia, sans-Serif;
         display: block;
         margin: 0;
-        background-image: url(Images/pic02.jpg);       
+        background-image: url(Images/pic02.jpg);
+        background-attachment:fixed;       
     }
     header{        
-        min-height: 50px;
+        height: 50px;
         width: 100%;
-        background-color: rgba(0,0,0,0.5);        
+        background-color: rgba(0,0,0,0.5);
+        white-space: nowrap;               
     }
     a{
         display: inline-block;
         padding-left: 20px;
         padding-right: 20px;
         color: #a4a4a4;        
-        min-height: 50px;
+        height: 50px;
         min-width: 30px;
         text-align: center;
         line-height: 50px;
@@ -76,7 +78,7 @@
         font-weight: 600;
     }
     .ehp{
-        color: #cc00cc;
+        color: #9900ff;
         font-weight: 600;
     }
     .wave{
@@ -139,5 +141,39 @@
         width: 90px;
         margin-left: 5px;        
         background-color: aliceblue;
+    }
+
+    .searchblock{
+        display: inline-block;
+        padding-left: 100px;
+        padding-right: 20px;               
+        height: 50px;
+        min-width: 30px;
+        text-align: center;
+        line-height: 50px;             
+    }
+
+    .searchspan{
+        color: #e6e6e6;
+        font-size: 1.1em;
+    }
+
+    #searchinput{
+        display: inline-block;
+        height: 30px;
+        padding: 3px;
+        padding-top: 5px;
+        border: none;
+        background-color: #e6e6e6; 
+        font-size: 17px;                
+    }
+    .searchresult{
+        position: absolute;
+        min-height: 50px;
+        width: 300px;
+        background-color: dimgray;
+    }
+    ul{
+        list-style-type: none;
     }
     
