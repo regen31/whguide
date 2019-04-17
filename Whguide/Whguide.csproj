@@ -164,6 +164,9 @@
     <Content Include="Views\Anomalies\C2\ForgottenPerimeterHabitationCoils.cshtml" />
     <Content Include="Views\Anomalies\C1\PerimeterCamp.cshtml" />
     <Content Include="Views\Anomalies\C1\PhaseCatalystNode.cshtml" />
+    <Content Include="Views\Anomalies\C1\TheLine.cshtml" />
+    <Content Include="Views\Anomalies\C1\UnsecuredPerimeterAmplifier.cshtml" />
+    <Content Include="Views\Anomalies\C1\UnsecuredPerimeterInformationCenter.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
