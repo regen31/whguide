@@ -127,7 +127,7 @@
         font-size: 0.8em;
         text-align: center;
         background-color: aliceblue;
-        border: none;       
+        border: none;               
     }
     
     .timearea {
@@ -164,6 +164,7 @@
         padding: 3px;
         padding-top: 5px;
         border: none;
+        border-radius: 5px;
         background-color: #e6e6e6; 
         font-size: 17px;                
     }

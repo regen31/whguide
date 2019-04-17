@@ -163,6 +163,7 @@
     <Content Include="Views\Home\C2.cshtml" />
     <Content Include="Views\Anomalies\C2\ForgottenPerimeterHabitationCoils.cshtml" />
     <Content Include="Views\Anomalies\C1\PerimeterCamp.cshtml" />
+    <Content Include="Views\Anomalies\C1\PhaseCatalystNode.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
