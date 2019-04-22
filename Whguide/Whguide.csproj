@@ -167,6 +167,12 @@
     <Content Include="Views\Anomalies\C1\TheLine.cshtml" />
     <Content Include="Views\Anomalies\C1\UnsecuredPerimeterAmplifier.cshtml" />
     <Content Include="Views\Anomalies\C1\UnsecuredPerimeterInformationCenter.cshtml" />
+    <Content Include="Views\Anomalies\C2\PerimeterCheckpoint.cshtml" />
+    <Content Include="Views\Anomalies\C2\PerimeterHangar.cshtml" />
+    <Content Include="Views\Anomalies\C2\SleeperDataSignatureSanctuary.cshtml" />
+    <Content Include="Views\Anomalies\C2\TheRuinsOfEnclaveCohort27.cshtml" />
+    <Content Include="Views\Anomalies\C2\UnsecuredPerimeterCommsRelay.cshtml" />
+    <Content Include="Views\Anomalies\C2\UnsecuredPerimeterTransponderFarm.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
