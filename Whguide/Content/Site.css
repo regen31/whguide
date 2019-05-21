@@ -73,11 +73,11 @@
     .summarytablerow > td:nth-child(odd){
         font-weight: bold;
     }
-    .trigger, .dps{
+    .trigger, .dps, .effect{
         color: #b30000;
         font-weight: 600;
     }
-    .ehp{
+    .ehp, .rrep{
         color: #9900ff;
         font-weight: 600;
     }
@@ -168,13 +168,32 @@
         background-color: #e6e6e6; 
         font-size: 17px;                
     }
-    .searchresult{
+    .searchresult{   
+        display: none;
         position: absolute;
-        min-height: 50px;
-        width: 300px;
-        background-color: dimgray;
+        padding: 3px;
+        background-color: rgb(0,0,0);        
+        text-align:left;          
+        z-index: 5;
     }
+     
+    .searchlink {
+        display: block;
+        padding: 0;
+        color: #a4a4a4;       
+        width: 100%;
+        text-align: left;        
+        font-size: 1.0em;
+        text-decoration: none;
+    }
+    .searchlink:hover {
+        background-color: #809fff;
+        color: white;
+    }
+
     ul{
         list-style-type: none;
+        padding: 0;
+        margin: 0;
     }
     

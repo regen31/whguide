@@ -102,18 +102,29 @@ var anomaliesArr = [
 $('body').on('keyup', '#searchinput', function (event) {
     var text = event.target.value;
     $('.searchLi').remove();
+    $('.searchresult').hide();
 
     if (text.length >= 3) {
         $('.searchresult').show();
+
         anomaliesArr.forEach(function (item, i, arr) {
 
             if (item.toUpperCase().includes(text.toUpperCase())) {
-                $('#searchlist').append('<li class="searchLi"><a href =/Home/Search/' + item.replace(/\s/g, '') + '>' + item + '</a></li>');
+                $('#searchlist').append('<li class="searchLi"><a class="searchlink" href =/Home/Search/' + item.replace(/\s/g, '') + '>' + item + '</a></li>');
             }
         });
     }
 });
 
-$('body').on('focusout', '#searchinput', function (event) {
-    $('.searchresult').hide();
+//$('body').on('focusout', '.searchresult', function (event) {
+    
+    
+//});
+
+$("body").click(function (event) {
+    if (event.target.getAttribute('class') == "searchresult") {
+        return
+    }
+    else
+        $('.searchresult').hide();    
 });
