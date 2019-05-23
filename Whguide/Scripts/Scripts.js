@@ -2,20 +2,25 @@
 //wh class links
 $('body').on('click', '.whclasslink', function (event) {
 
-    var href = event.target.getAttribute('href');
+    event.preventDefault();    
+    var href = event.target.getAttribute('href'); 
+    
+    $('.whclasslink').css({ 'background-color' : ''});    
+    this.style.backgroundColor = "rgba(0,0,0,0.3)";
 
-    var articles = document.getElementsByClassName('anomalycontainer');
-    articles.remove();
+
+    $('.anomalycontainer').remove();
+    
 
     $.ajax({
         url: href,
         type: "GET",
         datatype: "html",
         success: function (result) {
-            $('body').append(result);
-        }
-    })
-    return false;
+            $('body').append(result);            
+        },
+    });
+    
 });
 
 
@@ -97,6 +102,35 @@ var anomaliesArr = [
         "Forgotten Perimeter Coronation Platform",
         "Forgotten Perimeter Power Array",
         "Perimeter Ambush Point",
+    "Perimeter Camp",
+    "Phase Catalyst Node",
+    "The Line",
+    "Unsecured Perimeter Amplifier",
+    "Unsecured Perimeter Information Center",
+    "Forgotten Perimeter Gateway",
+    "Forgotten Perimeter Habitation Coils",
+    "Perimeter Checkpoint",
+    "Perimeter Hangar",
+    "Sleeper Data Signature Sanctuary",
+    "The Ruins Of Enclave Cohort 27",
+    "Unsecured Perimeter Comms Relay",
+    "Unsecured Perimeter Transponder Farm",
+    "Forgotten Frontier Quarantine Outpost",
+    "Forgotten Frontier Recursive Depot",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
 ]
 
 $('body').on('keyup', '#searchinput', function (event) {

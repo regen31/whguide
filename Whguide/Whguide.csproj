@@ -24,6 +24,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -131,6 +132,7 @@
     <Content Include="Content\Images\Sleepers\emergentdefender.png" />
     <Content Include="Content\Images\Sleepers\emergentescort.png" />
     <Content Include="Content\Images\Sleepers\emergentpatroller.png" />
+    <Content Include="Content\Images\Sleepers\emergentpreserver.png" />
     <Content Include="Content\Images\Sleepers\emergentupholder.png" />
     <Content Include="Content\Images\Sleepers\emergentwatchman.png" />
     <Content Include="Content\Images\Sleepers\sleeplessdefender.png" />
@@ -185,6 +187,12 @@
     <Content Include="Views\Home\C3.cshtml" />
     <Content Include="Views\Anomalies\C3\ForgottenFrontierQuarantineOutpost.cshtml" />
     <Content Include="Views\Anomalies\C3\ForgottenFrontierRecursiveDepot.cshtml" />
+    <Content Include="Views\Anomalies\C3\FortificationFrontierStronghold.cshtml" />
+    <Content Include="Views\Anomalies\C3\OutpostFrontierStronghold.cshtml" />
+    <Content Include="Views\Anomalies\C3\SolarCell.cshtml" />
+    <Content Include="Views\Anomalies\C3\TheOruzeConstruct.cshtml" />
+    <Content Include="Views\Anomalies\C3\UnsecuredFrontierDatabase.cshtml" />
+    <Content Include="Views\Anomalies\C3\UnsecuredFrontierReceiver.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
