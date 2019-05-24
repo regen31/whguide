@@ -12,12 +12,12 @@
         white-space: nowrap;               
     }
     a{
-        display: inline-block;
-        padding-left: 20px;
-        padding-right: 20px;
+        display: inline-block;        
         color: #a4a4a4;        
         height: 50px;
-        min-width: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+        min-width: 50px;
         text-align: center;
         line-height: 50px;
         font-size: 1.3em;
@@ -199,4 +199,21 @@
         padding: 0;
         margin: 0;
     }
+
+#overlay-image {       
+    width: 35px;
+    height: 35px;
+    padding-bottom: 5px;
+}
+
+#over-lay {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 10; /*Z INDEX FOR OVERLAY*/
+}
     

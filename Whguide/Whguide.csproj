@@ -122,6 +122,7 @@
     <Content Include="Content\Images\icons\neut.png" />
     <Content Include="Content\Images\icons\rr.png" />
     <Content Include="Content\Images\icons\web.png" />
+    <Content Include="Content\Images\loader1.gif" />
     <Content Include="Content\Images\pic02.jpg" />
     <Content Include="Content\Images\Sleepers\awakeneddefender.png" />
     <Content Include="Content\Images\Sleepers\awakenedescort.png" />
@@ -140,6 +141,7 @@
     <Content Include="Content\Images\Sleepers\sleeplessoutguard.png" />
     <Content Include="Content\Images\Sleepers\sleeplesspatroller.png" />
     <Content Include="Content\Images\Sleepers\sleeplesspreserver.png" />
+    <Content Include="Content\Images\Sleepers\sleeplesssafeguard.png" />
     <Content Include="Content\Images\Sleepers\sleeplessupholder.png" />
     <Content Include="Content\Images\Sleepers\sleeplesswatchman.png" />
     <Content Include="Content\Images\Sleepers\vigilantsentrytower.png" />
@@ -193,6 +195,15 @@
     <Content Include="Views\Anomalies\C3\TheOruzeConstruct.cshtml" />
     <Content Include="Views\Anomalies\C3\UnsecuredFrontierDatabase.cshtml" />
     <Content Include="Views\Anomalies\C3\UnsecuredFrontierReceiver.cshtml" />
+    <Content Include="Views\Anomalies\C4\ForgottenFrontierConversionModule.cshtml" />
+    <Content Include="Views\Home\C4.cshtml" />
+    <Content Include="Views\Anomalies\C4\ForgottenFrontierEvacuationCenter.cshtml" />
+    <Content Include="Views\Anomalies\C4\FrontierBarracks.cshtml" />
+    <Content Include="Views\Anomalies\C4\FrontierCommandPost.cshtml" />
+    <Content Include="Views\Anomalies\C4\IntegratedTerminus.cshtml" />
+    <Content Include="Views\Anomalies\C4\SleeperInformationSanctum.cshtml" />
+    <Content Include="Views\Anomalies\C4\UnsecuredFrontierDigitalNexus.cshtml" />
+    <Content Include="Views\Anomalies\C4\UnsecuredFrontierTrinaryHub.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

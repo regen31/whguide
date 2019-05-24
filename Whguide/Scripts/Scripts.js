@@ -2,12 +2,15 @@
 //wh class links
 $('body').on('click', '.whclasslink', function (event) {
 
-    event.preventDefault();    
-    var href = event.target.getAttribute('href'); 
+    event.preventDefault();
+    
+    var href = event.target.getAttribute('href');
+    var currentlink = $(this);
+    var currenthtml = $(this).html();
     
     $('.whclasslink').css({ 'background-color' : ''});    
     this.style.backgroundColor = "rgba(0,0,0,0.3)";
-
+    
 
     $('.anomalycontainer').remove();
     
@@ -16,8 +19,16 @@ $('body').on('click', '.whclasslink', function (event) {
         url: href,
         type: "GET",
         datatype: "html",
+        beforeSend: function () {
+            $('#over-lay').css({ 'display': 'flex' });
+            currentlink.html("<img align='center' id='overlay-image' src='/Content/Images/loader1.gif'/>");
+        },
         success: function (result) {
             $('body').append(result);            
+        },
+        complete: function () {
+            currentlink.html(currenthtml);
+            $('#over-lay').css({ 'display': 'none' });
         },
     });
     
@@ -99,9 +110,9 @@ $('body').on('keyup', '.dpsinput', function (event) {
 
 //anomaly searching
 var anomaliesArr = [
-        "Forgotten Perimeter Coronation Platform",
-        "Forgotten Perimeter Power Array",
-        "Perimeter Ambush Point",
+    "Forgotten Perimeter Coronation Platform",
+    "Forgotten Perimeter Power Array",
+    "Perimeter Ambush Point",
     "Perimeter Camp",
     "Phase Catalyst Node",
     "The Line",
@@ -150,10 +161,7 @@ $('body').on('keyup', '#searchinput', function (event) {
     }
 });
 
-//$('body').on('focusout', '.searchresult', function (event) {
-    
-    
-//});
+
 
 $("body").click(function (event) {
     if (event.target.getAttribute('class') == "searchresult") {
