@@ -126,24 +126,37 @@
     <Content Include="Content\Images\pic02.jpg" />
     <Content Include="Content\Images\Sleepers\awakeneddefender.png" />
     <Content Include="Content\Images\Sleepers\awakenedescort.png" />
+    <Content Include="Content\Images\Sleepers\awakenedkeeper.png" />
     <Content Include="Content\Images\Sleepers\awakenedpatroller.png" />
     <Content Include="Content\Images\Sleepers\awakenedpreserver.png" />
+    <Content Include="Content\Images\Sleepers\awakenedsentinel.png" />
     <Content Include="Content\Images\Sleepers\awakenedupholder.png" />
+    <Content Include="Content\Images\Sleepers\awakenedwarden.png" />
     <Content Include="Content\Images\Sleepers\awakenedwatchman.png" />
+    <Content Include="Content\Images\Sleepers\drifterresponsebattleship.png" />
     <Content Include="Content\Images\Sleepers\emergentdefender.png" />
     <Content Include="Content\Images\Sleepers\emergentescort.png" />
+    <Content Include="Content\Images\Sleepers\emergentkeeper.png" />
     <Content Include="Content\Images\Sleepers\emergentpatroller.png" />
     <Content Include="Content\Images\Sleepers\emergentpreserver.png" />
+    <Content Include="Content\Images\Sleepers\emergentsentinel.png" />
     <Content Include="Content\Images\Sleepers\emergentupholder.png" />
+    <Content Include="Content\Images\Sleepers\emergentwarden.png" />
     <Content Include="Content\Images\Sleepers\emergentwatchman.png" />
+    <Content Include="Content\Images\Sleepers\restlesssentrytower.png" />
     <Content Include="Content\Images\Sleepers\sleeplessdefender.png" />
     <Content Include="Content\Images\Sleepers\sleeplessescort.png" />
+    <Content Include="Content\Images\Sleepers\sleeplessguardian.png" />
+    <Content Include="Content\Images\Sleepers\sleeplesskeeper.png" />
     <Content Include="Content\Images\Sleepers\sleeplessoutguard.png" />
     <Content Include="Content\Images\Sleepers\sleeplesspatroller.png" />
     <Content Include="Content\Images\Sleepers\sleeplesspreserver.png" />
     <Content Include="Content\Images\Sleepers\sleeplesssafeguard.png" />
+    <Content Include="Content\Images\Sleepers\sleeplesssentinel.png" />
     <Content Include="Content\Images\Sleepers\sleeplessupholder.png" />
+    <Content Include="Content\Images\Sleepers\sleeplesswarden.png" />
     <Content Include="Content\Images\Sleepers\sleeplesswatchman.png" />
+    <Content Include="Content\Images\Sleepers\upgradedavenger.png" />
     <Content Include="Content\Images\Sleepers\vigilantsentrytower.png" />
     <Content Include="Content\Images\Sleepers\wakefulsentrytower.png" />
     <Content Include="Content\Site.css" />
@@ -204,6 +217,9 @@
     <Content Include="Views\Anomalies\C4\SleeperInformationSanctum.cshtml" />
     <Content Include="Views\Anomalies\C4\UnsecuredFrontierDigitalNexus.cshtml" />
     <Content Include="Views\Anomalies\C4\UnsecuredFrontierTrinaryHub.cshtml" />
+    <Content Include="Views\Anomalies\CapitalEscalation.cshtml" />
+    <Content Include="Views\Anomalies\C5\CoreStronghold.cshtml" />
+    <Content Include="Views\Home\C5.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

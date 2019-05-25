@@ -33,5 +33,10 @@ namespace Whguide.Controllers
         {
             return View();
         }
+
+        public ActionResult C5()
+        {
+            return View();
+        }
     }
 }
