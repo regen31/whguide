@@ -13,6 +13,7 @@ $('body').on('click', '.whclasslink', function (event) {
     
 
     $('.anomalycontainer').remove();
+    $('.navigationcont').remove();
     
 
     $.ajax({

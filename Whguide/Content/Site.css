@@ -23,9 +23,11 @@
         font-size: 1.3em;
         text-decoration: none;        
     }
-    a:hover{
+    .whclasslink:hover,.searchlink:hover{
         background-color: rgba(0,0,0,0.3);
     }
+    
+    
     h3{          
         margin-bottom: 0;
         color: aliceblue;
@@ -142,7 +144,35 @@
         margin-left: 5px;        
         background-color: aliceblue;
     }
+    /*navigation bar*/
+    .navigationcont {
+    position: fixed;
+    top: 100px;
+    left: 1400px;
+    display: inline-block;
+    text-align: center;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 5px;   
+}
 
+    .navigationlink {
+    line-height: 20px;
+    height: 20px;
+    width: 100%;
+    text-align: left;
+    padding: 2px;
+}
+
+    li.navigationLi:hover{
+        border-radius: 2px;
+        border: 1px solid #99bbff;
+    }
+
+    span.navbar{
+        font-size: 20px;
+        color: white;
+    }
+    /*search block*/
     .searchblock{
         display: inline-block;
         padding-left: 100px;
