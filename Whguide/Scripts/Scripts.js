@@ -36,6 +36,19 @@ $('body').on('click', '.whclasslink', function (event) {
 });
 
 
+
+//navigation links
+$("body").on('click', '.navigationlink', function (event) {
+
+    event.preventDefault();
+    var href = $(this).attr('href');
+    
+    var destination = $(href).offset().top - 5;
+
+    $('html, body').animate({ scrollTop: destination }, 400);    
+});
+
+
 //sleeper img zoom
 $('body').on('mousemove', '.sleeperimg', function (event) {
 
