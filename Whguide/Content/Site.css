@@ -61,9 +61,9 @@
         padding: 2px;        
     }    
     .maintablerow > td{
-        padding: 2px 1px;        
+        padding: 2px;        
         text-align: center;        
-        border-bottom: 1px solid gray;
+        border-bottom: 1px solid gray;        
     }
     .summarytable{
         vertical-align: top;
