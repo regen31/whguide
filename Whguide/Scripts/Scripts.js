@@ -25,7 +25,8 @@ $('body').on('click', '.whclasslink', function (event) {
             currentlink.html("<img align='center' id='overlay-image' src='/Content/Images/loader1.gif'/>");
         },
         success: function (result) {
-            $('body').append(result);            
+            $('body').append(result);
+            $(".anomalycontainer, table").animate({ opacity: 1 }, 300);           
         },
         complete: function () {
             currentlink.html(currenthtml);

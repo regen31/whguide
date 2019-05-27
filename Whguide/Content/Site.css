@@ -56,6 +56,7 @@
         border-collapse:collapse;        
         color: aliceblue;        
         margin-left: 10px;
+        opacity: 0;
     }
     .maintable  th{
         padding: 2px;        
@@ -102,6 +103,7 @@
         margin-left: 5px;
         padding: 10px 5px;
         white-space: nowrap;
+        opacity: 0;
     }
     
     .sleeperimg {        
