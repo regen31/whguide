@@ -228,6 +228,15 @@
     <Content Include="Views\Anomalies\C5\QuarantineArea.cshtml" />
     <Content Include="Views\Anomalies\C5\UnsecuredFrontierEnclaveRelay.cshtml" />
     <Content Include="Views\Anomalies\C5\UnsecuredFrontierServerBank.cshtml" />
+    <Content Include="Views\Home\C6.cshtml" />
+    <Content Include="Views\Anomalies\C6\CoreBastion.cshtml" />
+    <Content Include="Views\Anomalies\C6\CoreCitadel.cshtml" />
+    <Content Include="Views\Anomalies\C6\ForgottenCoreAssemblyHall.cshtml" />
+    <Content Include="Views\Anomalies\C6\ForgottenCoreCircuitryDisassembler.cshtml" />
+    <Content Include="Views\Anomalies\C6\StrangeEnergyReadings.cshtml" />
+    <Content Include="Views\Anomalies\C6\TheMirror.cshtml" />
+    <Content Include="Views\Anomalies\C6\UnsecuredCoreBackupArray.cshtml" />
+    <Content Include="Views\Anomalies\C6\UnsecuredCoreEmergence.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
