@@ -217,7 +217,6 @@
     <Content Include="Views\Anomalies\C4\SleeperInformationSanctum.cshtml" />
     <Content Include="Views\Anomalies\C4\UnsecuredFrontierDigitalNexus.cshtml" />
     <Content Include="Views\Anomalies\C4\UnsecuredFrontierTrinaryHub.cshtml" />
-    <Content Include="Views\Anomalies\CapitalEscalation.cshtml" />
     <Content Include="Views\Anomalies\C5\ForgottenCoreDataField.cshtml" />
     <Content Include="Views\Home\C5.cshtml" />
     <Content Include="Views\Anomalies\DrifterBattleship.cshtml" />
@@ -237,6 +236,8 @@
     <Content Include="Views\Anomalies\C6\TheMirror.cshtml" />
     <Content Include="Views\Anomalies\C6\UnsecuredCoreBackupArray.cshtml" />
     <Content Include="Views\Anomalies\C6\UnsecuredCoreEmergence.cshtml" />
+    <Content Include="Views\Anomalies\C5\CapitalEscalationC5.cshtml" />
+    <Content Include="Views\Anomalies\C6\CapitalEscalationC6.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
