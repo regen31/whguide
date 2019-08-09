@@ -43,5 +43,10 @@ namespace Whguide.Controllers
         {
             return View();
         }
+
+        public ActionResult GasSigs()
+        {
+            return View();
+        }
     }
 }

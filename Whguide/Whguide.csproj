@@ -238,6 +238,8 @@
     <Content Include="Views\Anomalies\C6\UnsecuredCoreEmergence.cshtml" />
     <Content Include="Views\Anomalies\C5\CapitalEscalationC5.cshtml" />
     <Content Include="Views\Anomalies\C6\CapitalEscalationC6.cshtml" />
+    <Content Include="Views\Anomalies\GasSigs\BarrenPerimeterReservoir.cshtml" />
+    <Content Include="Views\Home\GasSigs.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
