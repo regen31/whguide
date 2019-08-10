@@ -41,7 +41,7 @@
         font-style: italic;
     }
     
-    .dpscalc{
+    .dpscalc, .miningcalc{
         display: inline-block;
         position: absolute;
         color: aliceblue;
@@ -127,7 +127,7 @@
         z-index: 50;
     }
     
-    .dpsinput{
+    .dpsinput, .mineinput{
         height: 35px;
         font-size: 0.8em;
         text-align: center;

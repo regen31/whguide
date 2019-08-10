@@ -246,6 +246,14 @@
     <Content Include="Views\Anomalies\C6\CapitalEscalationC6.cshtml" />
     <Content Include="Views\Anomalies\GasSigs\BarrenPerimeterReservoir.cshtml" />
     <Content Include="Views\Home\GasSigs.cshtml" />
+    <Content Include="Views\Anomalies\GasSigs\BountifulFrontierReservoir.cshtml" />
+    <Content Include="Views\Anomalies\GasSigs\InstrumentalCoreReservoir.cshtml" />
+    <Content Include="Views\Anomalies\GasSigs\MinorPerimeterReservoir.cshtml" />
+    <Content Include="Views\Anomalies\GasSigs\OrdinaryPerimeterReservoir.cshtml" />
+    <Content Include="Views\Anomalies\GasSigs\SizeablePerimeterReservoir.cshtml" />
+    <Content Include="Views\Anomalies\GasSigs\TokenPerimeterReservoir.cshtml" />
+    <Content Include="Views\Anomalies\GasSigs\VastFrontierReservoir.cshtml" />
+    <Content Include="Views\Anomalies\GasSigs\VitalCoreReservoir.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

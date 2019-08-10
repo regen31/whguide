@@ -1,18 +1,18 @@
 ﻿@model Whguide.Models.GasPricesViewModel
 
-@{ 
-    var c50totalprice = Model.c50 * 3000;
-    var c60totalprice = Model.c60 * 1500;    
-    var totalprice = c50totalprice + c60totalprice;
-    var iskm3 = totalprice / 4500;
+@{
+    var c84totalprice = Model.c84 * 3000;
+    var c50totalprice = Model.c50 * 1500;
+    var totalprice = c84totalprice + c50totalprice;
+    var iskm3 = totalprice / 7500;
 
 }
 
 <div class="anomalycontainer">
-    <h3>Barren Perimeter Reservoir</h3>
+    <h3>Sizeable Perimeter Reservoir</h3>
     <h4>Gas Signature</h4>
 
-    <div class="miningcalc"> <span>At</span> <input type="text" size="5" placeholder="your m3/s" class="mineinput"> <span>m3/s site will be mined out in</span><textarea id="51" class="timearea" OreAmount="4500" disabled></textarea></div>
+    <div class="miningcalc"> <span>At</span> <input type="text" size="5" placeholder="your m3/s" class="mineinput"> <span>m3/s site will be mined out in</span><textarea id="56" class="timearea" OreAmount="7500" disabled></textarea></div>
 
     <table class="maintable">
         <tr>
@@ -42,17 +42,17 @@
             <td></td>
             <td class="effect"></td>
             <td class="effect"></td>
-            <td class="effect">-6</td>
+            <td class="effect">-9</td>
             <td class="rrep"></td>
             <td>7</td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
-            <td class="dps">74</td>
-            <td class="dps">540</td>
+            <td class="dps">87</td>
+            <td class="dps">636</td>
             <td>42</td>
-            <td class="ehp">12,520</td>
+            <td class="ehp">14,280</td>
         </tr>
         <tr class="maintablerow">
             <td class="trigger"></td>
@@ -75,7 +75,7 @@
         </tr>
         <tr class="maintablerow">
             <td></td>
-            <td>2</td>
+            <td>3</td>
             <td class="sleeper">Emergent Watchman</td>
             <td><img class="sleeperimg" src="~/Content/Images/Sleepers/emergentwatchman.png">F</td>
             <td></td>
@@ -105,30 +105,14 @@
             <td></td>
             <td></td>
             <td></td>
-            <td colspan="2">4,500m3</td>
+            <td colspan="2">7,500m3</td>
             <td></td>
             <td colspan="3">@totalprice.ToString("#,##0") ISK</td>
         </tr>
         <tr class="maintablerow">
             <td></td>
-            <td>3,000</td>
-            <td>Fullerite-C50</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td colspan="2">3,000 m3</td>
-            <td></td>
-            <td colspan="3">@c50totalprice.ToString("#,##0") ISK</td>
-        </tr>
-        <tr class="maintablerow">
-            <td></td>
             <td>1,500</td>
-            <td>Fullerite-C60</td>
+            <td>Fullerite-C50</td>
             <td></td>
             <td></td>
             <td></td>
@@ -139,13 +123,29 @@
             <td></td>
             <td colspan="2">1,500 m3</td>
             <td></td>
-            <td colspan="3">@c60totalprice.ToString("#,##0") ISK</td>
+            <td colspan="3">@c50totalprice.ToString("#,##0") ISK</td>
+        </tr>
+        <tr class="maintablerow">
+            <td></td>
+            <td>3,000</td>
+            <td>Fullerite-C84</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="2">6,000 m3</td>
+            <td></td>
+            <td colspan="3">@c84totalprice.ToString("#,##0") ISK</td>
         </tr>
     </table>
     <table class="summarytable">
         <tr class="summarytablerow">
             <td>ISK/EHP</td>
-            <td>160</td>
+            <td>168</td>
         </tr>
         <tr class="summarytablerow">
             <td>ISK/m3</td>
@@ -157,15 +157,15 @@
         </tr>
         <tr class="summarytablerow">
             <td>Blue Loot</td>
-            <td>2,000,000 ISK</td>
+            <td>2,400,000 ISK</td>
         </tr>
         <tr class="summarytablerow">
             <td>EHP</td>
-            <td>12,520</td>
+            <td>14,280</td>
         </tr>
         <tr class="summarytablerow">
             <td>DPS</td>
-            <td>74</td>
+            <td>87</td>
         </tr>
         <tr class="summarytablerow none">
             <td>Scrams</td>
@@ -177,7 +177,7 @@
         </tr>
         <tr class="summarytablerow">
             <td>Neuts</td>
-            <td>-6</td>
+            <td>-9</td>
         </tr>
         <tr class="summarytablerow none">
             <td>RRep</td>
@@ -189,7 +189,7 @@
         </tr>
         <tr class="summarytablerow">
             <td>Frigates</td>
-            <td>5</td>
+            <td>6</td>
         </tr>
         <tr class="summarytablerow none">
             <td>Cruisers</td>
@@ -201,6 +201,11 @@
         </tr>
     </table>
 </div>
+
+
+
+
+
 
 
 

@@ -1,18 +1,18 @@
 ﻿@model Whguide.Models.GasPricesViewModel
 
-@{ 
-    var c50totalprice = Model.c50 * 3000;
-    var c60totalprice = Model.c60 * 1500;    
-    var totalprice = c50totalprice + c60totalprice;
-    var iskm3 = totalprice / 4500;
+@{
+    var c70totalprice = Model.c70 * 3000;
+    var c72totalprice = Model.c72 * 1500;
+    var totalprice = c70totalprice + c72totalprice;
+    var iskm3 = totalprice / 6000;
 
 }
 
 <div class="anomalycontainer">
-    <h3>Barren Perimeter Reservoir</h3>
+    <h3>Minor Perimeter Reservoir</h3>
     <h4>Gas Signature</h4>
 
-    <div class="miningcalc"> <span>At</span> <input type="text" size="5" placeholder="your m3/s" class="mineinput"> <span>m3/s site will be mined out in</span><textarea id="51" class="timearea" OreAmount="4500" disabled></textarea></div>
+    <div class="miningcalc"> <span>At</span> <input type="text" size="5" placeholder="your m3/s" class="mineinput"> <span>m3/s site will be mined out in</span><textarea id="54" class="timearea" OreAmount="6000" disabled></textarea></div>
 
     <table class="maintable">
         <tr>
@@ -42,55 +42,36 @@
             <td></td>
             <td class="effect"></td>
             <td class="effect"></td>
-            <td class="effect">-6</td>
+            <td class="effect"></td>
             <td class="rrep"></td>
-            <td>7</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td class="dps">74</td>
-            <td class="dps">540</td>
-            <td>42</td>
-            <td class="ehp">12,520</td>
-        </tr>
-        <tr class="maintablerow">
-            <td class="trigger"></td>
-            <td>3</td>
-            <td class="sleeper">Emergent Patroller</td>
-            <td><img class="sleeperimg" src="~/Content/Images/Sleepers/emergentpatroller.png">F</td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
-            <td>35</td>
-            <td>1,750</td>
-            <td>6,800</td>
-            <td>250</td>
-            <td>16</td>
-            <td>116</td>
-            <td>42</td>
-            <td>3,000</td>
+            <td class="dps">80</td>
+            <td class="dps">800</td>
+            <td>84</td>
+            <td class="ehp">38,333</td>
         </tr>
         <tr class="maintablerow">
             <td></td>
             <td>2</td>
-            <td class="sleeper">Emergent Watchman</td>
-            <td><img class="sleeperimg" src="~/Content/Images/Sleepers/emergentwatchman.png">F</td>
+            <td class="sleeper">Awakened Patroller</td>
+            <td><img class="sleeperimg" src="~/Content/Images/Sleepers/awakenedpatroller.png">C</td>
             <td></td>
             <td></td>
-            <td>-3</td>
             <td></td>
-            <td>7</td>
-            <td>35</td>
-            <td>1,925</td>
-            <td>5,000</td>
-            <td>275</td>
-            <td>12</td>
-            <td>96</td>
-            <td>42</td>
-            <td>1,760</td>
+            <td></td>
+            <td></td>
+            <td>150</td>
+            <td>1,190</td>
+            <td>15,000</td>
+            <td>170</td>
+            <td>40</td>
+            <td>400</td>
+            <td>84</td>
+            <td>19,167</td>
         </tr>
 
         <tr class="wave maintablerow">
@@ -105,14 +86,14 @@
             <td></td>
             <td></td>
             <td></td>
-            <td colspan="2">4,500m3</td>
+            <td colspan="2">6,000m3</td>
             <td></td>
             <td colspan="3">@totalprice.ToString("#,##0") ISK</td>
         </tr>
         <tr class="maintablerow">
             <td></td>
             <td>3,000</td>
-            <td>Fullerite-C50</td>
+            <td>Fullerite-C70</td>
             <td></td>
             <td></td>
             <td></td>
@@ -123,12 +104,12 @@
             <td></td>
             <td colspan="2">3,000 m3</td>
             <td></td>
-            <td colspan="3">@c50totalprice.ToString("#,##0") ISK</td>
+            <td colspan="3">@c70totalprice.ToString("#,##0") ISK</td>
         </tr>
         <tr class="maintablerow">
             <td></td>
             <td>1,500</td>
-            <td>Fullerite-C60</td>
+            <td>Fullerite-C72</td>
             <td></td>
             <td></td>
             <td></td>
@@ -137,15 +118,15 @@
             <td></td>
             <td></td>
             <td></td>
-            <td colspan="2">1,500 m3</td>
+            <td colspan="2">3,000 m3</td>
             <td></td>
-            <td colspan="3">@c60totalprice.ToString("#,##0") ISK</td>
+            <td colspan="3">@c72totalprice.ToString("#,##0") ISK</td>
         </tr>
     </table>
     <table class="summarytable">
         <tr class="summarytablerow">
             <td>ISK/EHP</td>
-            <td>160</td>
+            <td>52</td>
         </tr>
         <tr class="summarytablerow">
             <td>ISK/m3</td>
@@ -161,11 +142,11 @@
         </tr>
         <tr class="summarytablerow">
             <td>EHP</td>
-            <td>12,520</td>
+            <td>38,333</td>
         </tr>
         <tr class="summarytablerow">
             <td>DPS</td>
-            <td>74</td>
+            <td>80</td>
         </tr>
         <tr class="summarytablerow none">
             <td>Scrams</td>
@@ -175,9 +156,9 @@
             <td>Webs</td>
             <td>0</td>
         </tr>
-        <tr class="summarytablerow">
+        <tr class="summarytablerow none">
             <td>Neuts</td>
-            <td>-6</td>
+            <td>0</td>
         </tr>
         <tr class="summarytablerow none">
             <td>RRep</td>
@@ -187,13 +168,13 @@
             <td>Towers</td>
             <td>0</td>
         </tr>
-        <tr class="summarytablerow">
-            <td>Frigates</td>
-            <td>5</td>
-        </tr>
         <tr class="summarytablerow none">
-            <td>Cruisers</td>
+            <td>Frigates</td>
             <td>0</td>
+        </tr>
+        <tr class="summarytablerow">
+            <td>Cruisers</td>
+            <td>2</td>
         </tr>
         <tr class="summarytablerow none">
             <td>Battleships</td>
@@ -201,6 +182,9 @@
         </tr>
     </table>
 </div>
+
+
+
 
 
 

@@ -74,7 +74,7 @@ $('body').on('mouseleave', '.sleeperimg', function (event) {
     $('.popupimg').remove();
 });
 
-//dps calculator
+//dps and mining calculator
 function secondsToHms(d) {
 
     if (Number(d) && d != Infinity) {
@@ -117,6 +117,27 @@ $('body').on('keyup', '.dpsinput', function (event) {
         var seconds = ehp / dps;
         var time = secondsToHms(seconds);
         
+        var areaid = areas[i].getAttribute('id');
+        $('#' + areaid).text(time);
+    }
+});
+
+$('body').on('keyup', '.mineinput', function (event) {
+
+    var m3s = event.target.value;
+
+    $(function () {
+        $('.mineinput').val(m3s);
+    });
+
+    var areas = $('.timearea');
+
+    for (i = 0; i < areas.length; i++) {
+
+        var OreAmount = areas[i].getAttribute('OreAmount');
+        var seconds = OreAmount / m3s;
+        var time = secondsToHms(seconds);
+
         var areaid = areas[i].getAttribute('id');
         $('#' + areaid).text(time);
     }
