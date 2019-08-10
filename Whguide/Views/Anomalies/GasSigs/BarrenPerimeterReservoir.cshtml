@@ -1,5 +1,15 @@
-﻿<div class="anomalycontainer">
-    <h3>Unsecured Core Emergence</h3>
+﻿@model Whguide.Models.GasPricesViewModel
+
+@{ 
+    var c50totalprice = Model.c50 * 3000;
+    var c60totalprice = Model.c60 * 1500;    
+    var totalprice = c50totalprice + c60totalprice;
+    var iskm3 = totalprice / 4500;
+
+}
+
+<div class="anomalycontainer">
+    <h3>Barren Perimeter Reservoir</h3>
     <h4>Gas Signature</h4>
 
     <div class="dpscalc"> <span>With</span> <input type="text" size="5" placeholder="your DPS" class="dpsinput"> <span>best possible time is</span><textarea id="51" class="timearea" EHP="" disabled></textarea></div>
@@ -97,7 +107,7 @@
             <td></td>
             <td colspan="2">4,500m3</td>
             <td></td>
-            <td colspan="3">~ isk value</td>
+            <td colspan="3">@totalprice.ToString("#,##0") ISK</td>
         </tr>
         <tr class="maintablerow">
             <td></td>
@@ -113,7 +123,7 @@
             <td></td>
             <td colspan="2">3,000 m3</td>
             <td></td>
-            <td colspan="3">~ isk value</td>
+            <td colspan="3">@c50totalprice.ToString("#,##0") ISK</td>
         </tr>
         <tr class="maintablerow">
             <td></td>
@@ -129,7 +139,7 @@
             <td></td>
             <td colspan="2">1,500 m3</td>
             <td></td>
-            <td colspan="3">~ isk value</td>
+            <td colspan="3">@c60totalprice.ToString("#,##0") ISK</td>
         </tr>
     </table>
     <table class="summarytable">
@@ -139,11 +149,11 @@
         </tr>
         <tr class="summarytablerow">
             <td>ISK/m3</td>
-            <td>*value*</td>
+            <td>@iskm3.ToString("#,##0") ISK</td>
         </tr>
         <tr class="summarytablerow">
             <td>Gas value</td>
-            <td>*value*</td>
+            <td>@totalprice.ToString("#,##0") ISK</td>
         </tr>
         <tr class="summarytablerow">
             <td>Blue Loot</td>

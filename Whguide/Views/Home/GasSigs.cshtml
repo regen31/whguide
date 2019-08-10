@@ -1,5 +1,7 @@
-﻿@{
+﻿@model Whguide.Models.GasPricesViewModel
+
+@{
     Layout = null;
 }
 
-@Html.Partial("~\\views\\Anomalies\\GasSigs\\BarrenPerimeterReservoir.cshtml")
+@Html.Partial("~\\views\\Anomalies\\GasSigs\\BarrenPerimeterReservoir.cshtml", @Model)
