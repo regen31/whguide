@@ -1,0 +1,456 @@
+﻿@model Whguide.Models.OrePricesViewModel
+
+@{
+    var ArkonorTotalPrice = Model.Arkonor * 15000;
+    var BistotTotalPrice = Model.Bistot * 20000;
+    var CrokiteTotalPrice = Model.Crokite * 40000;
+    var DarkOchreTotalPrice = Model.DarkOchre * 20000;
+    var GneissTotalPrice = Model.Gneiss * 150000;
+    var HedbergiteTotalPrice = Model.Hedbergite * 100000;
+    var HemorphiteTotalPrice = Model.Hemorphite * 100000;
+    var JaspetTotalPrice = Model.Jaspet * 120000;
+    var KerniteTotalPrice = Model.Kernite * 150000;
+    var MercoxitTotalPrice = Model.Mercoxit * 0;
+    var OmberTotalPrice = Model.Omber * 150000;
+    var PlagioclaseTotalPrice = Model.Plagioclase * 836000;
+    var PyroxeresTotalPrice = Model.Pyroxeres * 250000;
+    var ScorditeTotalPrice = Model.Scordite * 274000;
+    var SpodumainTotalPrice = Model.Spodumain * 15000;
+    var VeldsparTotalPrice = Model.Veldspar * 4346000;
+
+    var totalprice = ArkonorTotalPrice + BistotTotalPrice + CrokiteTotalPrice + DarkOchreTotalPrice + GneissTotalPrice + HedbergiteTotalPrice + HemorphiteTotalPrice + JaspetTotalPrice + KerniteTotalPrice + MercoxitTotalPrice + OmberTotalPrice + PlagioclaseTotalPrice + PyroxeresTotalPrice + ScorditeTotalPrice + SpodumainTotalPrice + VeldsparTotalPrice;
+    var totalIskm3 = totalprice / 4303300;
+}
+
+<div class="anomalycontainer">
+    <h3>Average Frontier Deposit</h3>
+    <h4>Ore Anomaly</h4>
+
+    <div class="miningcalc"> <span>At</span> <input type="text" size="5" placeholder="your m3/s" class="mineinput"> <span>m3/s site will be mined out in</span><textarea id="60" class="timearea" OreAmount="4303300" disabled></textarea></div>
+
+    <table class="maintable">
+        <tr>
+            <th></th>
+            <th>Qty</th>
+            <th>Sleeper</th>
+            <th>Class</th>
+            <th><img class="icon" src="~/Content/Images/icons/dis.png"></th>
+            <th><img class="icon" src="~/Content/Images/icons/web.png"></th>
+            <th><img class="icon" src="~/Content/Images/icons/neut.png"></th>
+            <th><img class="icon" src="~/Content/Images/icons/rr.png"></th>
+            <th>Dist</th>
+            <th>Sig</th>
+            <th>Max Speed</th>
+            <th>Orbit</th>
+            <th>Velocity</th>
+            <th>DPS</th>
+            <th>Alpha</th>
+            <th>Range</th>
+            <th>EHP</th>
+        </tr>
+
+        <tr class="wave maintablerow">
+            <td>Defenders</td>
+            <td></td>
+            <td class="trigger"></td>
+            <td></td>
+            <td class="effect"></td>
+            <td class="effect"></td>
+            <td class="effect"></td>
+            <td class="rrep"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="dps">169</td>
+            <td class="dps">1,548</td>
+            <td>84</td>
+            <td class="ehp">66,500</td>
+        </tr>
+        <tr class="maintablerow">
+            <td class="trigger"></td>
+            <td>3</td>
+            <td class="sleeper">Emergent Patroller</td>
+            <td><img class="sleeperimg" src="~/Content/Images/Sleepers/emergentpatroller.png">F</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>35</td>
+            <td>1,750</td>
+            <td>6,800</td>
+            <td>250</td>
+            <td>16</td>
+            <td>116</td>
+            <td>42</td>
+            <td>3,000</td>
+        </tr>
+        <tr class="maintablerow">
+            <td></td>
+            <td>3</td>
+            <td class="sleeper">Awakened Patroller</td>
+            <td><img class="sleeperimg" src="~/Content/Images/Sleepers/awakenedpatroller.png">C</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>150</td>
+            <td>1,190</td>
+            <td>15,000</td>
+            <td>170</td>
+            <td>40</td>
+            <td>400</td>
+            <td>84</td>
+            <td>19,167</td>
+        </tr>
+
+        <tr class="wave maintablerow">
+            <td style="text-align: left">Ore</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="3">4,303,300 m3</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="3">@totalprice.ToString("#,##0") ISK</td>
+        </tr>
+        <tr class="maintablerow">
+            <td></td>
+            <td>15,000</td>
+            <td>Arkonor</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="3">240,000 m3</td>
+            <td></td>
+            <td></td>
+            <td>@Model.ArkonorIskm3.ToString("F2") ISK/m3</td>
+            <td></td>
+            <td colspan="3">@ArkonorTotalPrice.ToString("#,##0") ISK</td>
+        </tr>
+        <tr class="maintablerow">
+            <td></td>
+            <td>20,000</td>
+            <td>Bistot</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="3">320,000 m3</td>
+            <td></td>
+            <td></td>
+            <td>@Model.BistotIskm3.ToString("F2") ISK/m3</td>
+            <td></td>
+            <td colspan="3">@BistotTotalPrice.ToString("#,##0") ISK</td>
+        </tr>
+        <tr class="maintablerow">
+            <td></td>
+            <td>40,000</td>
+            <td>Crokite</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="3">640,000 m3</td>
+            <td></td>
+            <td></td>
+            <td>@Model.CrokiteIskm3.ToString("F2") ISK/m3</td>
+            <td></td>
+            <td colspan="3">@CrokiteTotalPrice.ToString("#,##0") ISK</td>
+        </tr>
+        <tr class="maintablerow">
+            <td></td>
+            <td>20,000</td>
+            <td>Dark Ochre</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="3">160,000 m3</td>
+            <td></td>
+            <td></td>
+            <td>@Model.DarkOchreIskm3.ToString("F2") ISK/m3</td>
+            <td></td>
+            <td colspan="3">@DarkOchreTotalPrice.ToString("#,##0") ISK</td>
+        </tr>
+        <tr class="maintablerow">
+            <td></td>
+            <td>150,000</td>
+            <td>Gneiss</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="3">750,000 m3</td>
+            <td></td>
+            <td></td>
+            <td>@Model.GneissIskm3.ToString("F2") ISK/m3</td>
+            <td></td>
+            <td colspan="3">@GneissTotalPrice.ToString("#,##0") ISK</td>
+        </tr>
+        <tr class="maintablerow">
+            <td></td>
+            <td>100,000</td>
+            <td>Hedbergite</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="3">300,000 m3</td>
+            <td></td>
+            <td></td>
+            <td>@Model.HedbergiteIskm3.ToString("F2") ISK/m3</td>
+            <td></td>
+            <td colspan="3">@HedbergiteTotalPrice.ToString("#,##0") ISK</td>
+        </tr>
+        <tr class="maintablerow">
+            <td></td>
+            <td>100,000</td>
+            <td>Hemorphite</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="3">300,000 m3</td>
+            <td></td>
+            <td></td>
+            <td>@Model.HemorphiteIskm3.ToString("F2") ISK/m3</td>
+            <td></td>
+            <td colspan="3">@HemorphiteTotalPrice.ToString("#,##0") ISK</td>
+        </tr>
+        <tr class="maintablerow">
+            <td></td>
+            <td>120,000</td>
+            <td>Jaspet</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="3">240,000 m3</td>
+            <td></td>
+            <td></td>
+            <td>@Model.JaspetIskm3.ToString("F2") ISK/m3</td>
+            <td></td>
+            <td colspan="3">@JaspetTotalPrice.ToString("#,##0") ISK</td>
+        </tr>
+        <tr class="maintablerow">
+            <td></td>
+            <td>150,000</td>
+            <td>Kernite</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="3">180,000 m3</td>
+            <td></td>
+            <td></td>
+            <td>@Model.KerniteIskm3.ToString("F2") ISK/m3</td>
+            <td></td>
+            <td colspan="3">@KerniteTotalPrice.ToString("#,##0") ISK</td>
+        </tr>
+        <tr class="maintablerow">
+            <td></td>
+            <td>0</td>
+            <td>Mercoxit</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="3">0 m3</td>
+            <td></td>
+            <td></td>
+            <td>@Model.MercoxitIskm3.ToString("F2") ISK/m3</td>
+            <td></td>
+            <td colspan="3">@MercoxitTotalPrice.ToString("#,##0") ISK</td>
+        </tr>
+        <tr class="maintablerow">
+            <td></td>
+            <td>150,000</td>
+            <td>Omber</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="3">90,000 m3</td>
+            <td></td>
+            <td></td>
+            <td>@Model.OmberIskm3.ToString("F2") ISK/m3</td>
+            <td></td>
+            <td colspan="3">@OmberTotalPrice.ToString("#,##0") ISK</td>
+        </tr>
+        <tr class="maintablerow">
+            <td></td>
+            <td>836,000</td>
+            <td>Plagioclase</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="3">292,600 m3</td>
+            <td></td>
+            <td></td>
+            <td>@Model.PlagioclaseIskm3.ToString("F2") ISK/m3</td>
+            <td></td>
+            <td colspan="3">@PlagioclaseTotalPrice.ToString("#,##0") ISK</td>
+        </tr>
+        <tr class="maintablerow">
+            <td></td>
+            <td>250,000</td>
+            <td>Pyroxeres</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="3">75,000 m3</td>
+            <td></td>
+            <td></td>
+            <td>@Model.PyroxeresIskm3.ToString("F2") ISK/m3</td>
+            <td></td>
+            <td colspan="3">@PyroxeresTotalPrice.ToString("#,##0") ISK</td>
+        </tr>
+        <tr class="maintablerow">
+            <td></td>
+            <td>274,000</td>
+            <td>Scordite</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="3">41,100 m3</td>
+            <td></td>
+            <td></td>
+            <td>@Model.ScorditeIskm3.ToString("F2") ISK/m3</td>
+            <td></td>
+            <td colspan="3">@ScorditeTotalPrice.ToString("#,##0") ISK</td>
+        </tr>
+        <tr class="maintablerow">
+            <td></td>
+            <td>15,000</td>
+            <td>Spodumain</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="3">240,000 m3</td>
+            <td></td>
+            <td></td>
+            <td>@Model.SpodumainIskm3.ToString("F2") ISK/m3</td>
+            <td></td>
+            <td colspan="3">@SpodumainTotalPrice.ToString("#,##0") ISK</td>
+        </tr>
+        <tr class="maintablerow">
+            <td></td>
+            <td>4,346,000</td>
+            <td>Veldspar</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="3">434,600 m3</td>
+            <td></td>
+            <td></td>
+            <td>@Model.VeldsparIskm3.ToString("F2") ISK/m3</td>
+            <td></td>
+            <td colspan="3">@VeldsparTotalPrice.ToString("#,##0") ISK</td>
+        </tr>
+    </table>
+    <table class="summarytable">
+        <tr class="summarytablerow">
+            <td>ISK/EHP</td>
+            <td>63</td>
+        </tr>
+        <tr class="summarytablerow">
+            <td>ISK/m3</td>
+            <td>@totalIskm3.ToString("#,##0")</td>
+        </tr>
+        <tr class="summarytablerow">
+            <td>Ore value</td>
+            <td>@totalprice.ToString("#,##0") ISK</td>
+        </tr>
+        <tr class="summarytablerow">
+            <td>Blue Loot</td>
+            <td>4,200,000 ISK</td>
+        </tr>
+        <tr class="summarytablerow">
+            <td>EHP</td>
+            <td>66,500</td>
+        </tr>
+        <tr class="summarytablerow">
+            <td>DPS</td>
+            <td>169</td>
+        </tr>
+        <tr class="summarytablerow none">
+            <td>Scrams</td>
+            <td>0</td>
+        </tr>
+        <tr class="summarytablerow none">
+            <td>Webs</td>
+            <td>0</td>
+        </tr>
+        <tr class="summarytablerow none">
+            <td>Neuts</td>
+            <td>0</td>
+        </tr>
+        <tr class="summarytablerow none">
+            <td>RRep</td>
+            <td>0</td>
+        </tr>
+        <tr class="summarytablerow none">
+            <td>Towers</td>
+            <td>0</td>
+        </tr>
+        <tr class="summarytablerow">
+            <td>Frigates</td>
+            <td>3</td>
+        </tr>
+        <tr class="summarytablerow">
+            <td>Cruisers</td>
+            <td>3</td>
+        </tr>
+        <tr class="summarytablerow none">
+            <td>Battleships</td>
+            <td>0</td>
+        </tr>
+    </table>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

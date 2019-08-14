@@ -1,12 +1,13 @@
 ﻿@model Whguide.Models.GasPricesViewModel
 
-@{
-    var c84totalprice = Model.c84 * 3000;
-    var c50totalprice = Model.c50 * 1500;
-    var totalprice = c84totalprice + c50totalprice;
-    var iskm3 = totalprice / 7500;
-
-}
+@{   
+        var c84totalprice = Model.c84 * 3000;
+        var c50totalprice = Model.c50 * 1500;
+        var totalprice = c84totalprice + c50totalprice;
+        var iskm3 = totalprice / 7500;
+ }
+    
+   
 
 <div class="anomalycontainer">
     <h3>Sizeable Perimeter Reservoir</h3>

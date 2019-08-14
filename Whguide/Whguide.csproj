@@ -176,6 +176,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\GasPricesViewModel.cs" />
+    <Compile Include="Models\OrePricesViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -254,6 +255,8 @@
     <Content Include="Views\Anomalies\GasSigs\TokenPerimeterReservoir.cshtml" />
     <Content Include="Views\Anomalies\GasSigs\VastFrontierReservoir.cshtml" />
     <Content Include="Views\Anomalies\GasSigs\VitalCoreReservoir.cshtml" />
+    <Content Include="Views\Home\OreAnoms.cshtml" />
+    <Content Include="Views\Anomalies\OreAnoms\AverageFrontierDeposit.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

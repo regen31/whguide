@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.Mvc;
 using Whguide.Classes;
+using Whguide.Models;
 
 namespace Whguide.Controllers
 {
@@ -48,8 +49,13 @@ namespace Whguide.Controllers
 
         //[OutputCache(Duration = 1800, Location = OutputCacheLocation.Downstream)]
         public ActionResult GasSigs()
+        {           
+                return View(Prices.GetGasPrices());            
+        }
+
+        public ActionResult OreAnoms()
         {
-            return View(Prices.GetGasPrices());
+            return View(Prices.GetOrePrices());
         }
     }
 }
