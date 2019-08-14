@@ -68,69 +68,69 @@ namespace Whguide.Classes
             {
                 GetPricesFromESI();
 
-                var arkonor = items.First(x => x.type_id == 22); // Arkonor
-                oreprices.Arkonor = arkonor.average_price;
-                oreprices.ArkonorIskm3 = arkonor.average_price / 16;
+                var arkonor = items.First(x => x.type_id == 28367); // Arkonor
+                oreprices.Arkonor = arkonor.average_price / 100;
+                oreprices.ArkonorIskm3 = arkonor.average_price / 100 / 16;
 
-                var bistot = items.First(x => x.type_id == 1223); // Bistot
-                oreprices.Bistot = bistot.average_price;
-                oreprices.BistotIskm3 = bistot.average_price / 16;
+                var bistot = items.First(x => x.type_id == 28388); // Bistot
+                oreprices.Bistot = bistot.average_price / 100;
+                oreprices.BistotIskm3 = bistot.average_price / 100 / 16;
 
-                var crokite = items.First(x => x.type_id == 1225); // Crokite
-                oreprices.Crokite = crokite.average_price;
-                oreprices.CrokiteIskm3 = crokite.average_price / 16;
+                var crokite = items.First(x => x.type_id == 28391); // Crokite
+                oreprices.Crokite = crokite.average_price / 100;
+                oreprices.CrokiteIskm3 = crokite.average_price / 100 / 16;
 
-                var darkochre = items.First(x => x.type_id == 1232); // DarkOchre
-                oreprices.DarkOchre = darkochre.average_price;
-                oreprices.DarkOchreIskm3 = darkochre.average_price / 8;
+                var darkochre = items.First(x => x.type_id == 28394); // DarkOchre
+                oreprices.DarkOchre = darkochre.average_price / 100;
+                oreprices.DarkOchreIskm3 = darkochre.average_price / 100 / 8;
 
-                var gneiss = items.First(x => x.type_id == 1229); // Gneiss
-                oreprices.Gneiss = gneiss.average_price;
-                oreprices.GneissIskm3 = gneiss.average_price / 5;
+                var gneiss = items.First(x => x.type_id == 28397); // Gneiss
+                oreprices.Gneiss = gneiss.average_price / 100;
+                oreprices.GneissIskm3 = gneiss.average_price / 100 / 5;
 
-                var hedbergite = items.First(x => x.type_id == 21); // Hedbergite
-                oreprices.Hedbergite = hedbergite.average_price;
-                oreprices.HedbergiteIskm3 = hedbergite.average_price / 3;
+                var hedbergite = items.First(x => x.type_id == 28401); // Hedbergite
+                oreprices.Hedbergite = hedbergite.average_price / 100;
+                oreprices.HedbergiteIskm3 = hedbergite.average_price / 100 / 3;
 
-                var hemorphite = items.First(x => x.type_id == 1231); // Hemorphite
-                oreprices.Hemorphite = hemorphite.average_price;
-                oreprices.HemorphiteIskm3 = hemorphite.average_price / 3;
+                var hemorphite = items.First(x => x.type_id == 28403); // Hemorphite
+                oreprices.Hemorphite = hemorphite.average_price / 100;
+                oreprices.HemorphiteIskm3 = hemorphite.average_price / 100 / 3;
 
-                var jaspet = items.First(x => x.type_id == 1226); // Jaspet
-                oreprices.Jaspet = jaspet.average_price;
-                oreprices.JaspetIskm3 = jaspet.average_price / 2;
+                var jaspet = items.First(x => x.type_id == 28406); // Jaspet
+                oreprices.Jaspet = jaspet.average_price / 100;
+                oreprices.JaspetIskm3 = jaspet.average_price / 100 / 2;
 
-                var kernite = items.First(x => x.type_id == 20); // Kernite
-                oreprices.Kernite = kernite.average_price;
-                oreprices.KerniteIskm3 = kernite.average_price / 1.2;
+                var kernite = items.First(x => x.type_id == 28410); // Kernite
+                oreprices.Kernite = kernite.average_price / 100;
+                oreprices.KerniteIskm3 = kernite.average_price / 100 / 1.2;
 
-                var mercoxit = items.First(x => x.type_id == 11396); // Mercoxit
-                oreprices.Mercoxit = mercoxit.average_price;
-                oreprices.MercoxitIskm3 = mercoxit.average_price / 40;
+                var mercoxit = items.First(x => x.type_id == 28413); // Mercoxit
+                oreprices.Mercoxit = mercoxit.average_price / 100;
+                oreprices.MercoxitIskm3 = mercoxit.average_price / 100 / 40;
 
-                var omber = items.First(x => x.type_id == 1227); // Omber
-                oreprices.Omber = omber.average_price;
-                oreprices.OmberIskm3 = omber.average_price / 0.6;
+                var omber = items.First(x => x.type_id == 28416); // Omber
+                oreprices.Omber = omber.average_price / 100;
+                oreprices.OmberIskm3 = omber.average_price / 100 / 0.6;
 
-                var plagioclase = items.First(x => x.type_id == 18); // Plagioclase
-                oreprices.Plagioclase = plagioclase.average_price;
-                oreprices.PlagioclaseIskm3 = plagioclase.average_price / 0.35;
+                var plagioclase = items.First(x => x.type_id == 28422); // Plagioclase
+                oreprices.Plagioclase = plagioclase.average_price / 100;
+                oreprices.PlagioclaseIskm3 = plagioclase.average_price / 100 / 0.35;
 
-                var pyroxeres = items.First(x => x.type_id == 1224); // Pyroxeres
-                oreprices.Pyroxeres = pyroxeres.average_price;
-                oreprices.PyroxeresIskm3 = pyroxeres.average_price / 0.3;
+                var pyroxeres = items.First(x => x.type_id == 28424); // Pyroxeres
+                oreprices.Pyroxeres = pyroxeres.average_price / 100;
+                oreprices.PyroxeresIskm3 = pyroxeres.average_price / 100 / 0.3;
 
-                var scordite = items.First(x => x.type_id == 1228); // Scordite
-                oreprices.Scordite = scordite.average_price;
-                oreprices.ScorditeIskm3 = scordite.average_price / 0.15;
+                var scordite = items.First(x => x.type_id == 28429); // Scordite
+                oreprices.Scordite = scordite.average_price / 100;
+                oreprices.ScorditeIskm3 = scordite.average_price / 100 / 0.15;
 
-                var spodumain = items.First(x => x.type_id == 19); // Spodumain
-                oreprices.Spodumain = spodumain.average_price;
-                oreprices.SpodumainIskm3 = spodumain.average_price / 16;
+                var spodumain = items.First(x => x.type_id == 28420); // Spodumain
+                oreprices.Spodumain = spodumain.average_price / 100;
+                oreprices.SpodumainIskm3 = spodumain.average_price / 100 / 16;
 
-                var veldspar = items.First(x => x.type_id == 1230); // Veldspar
-                oreprices.Veldspar = veldspar.average_price;
-                oreprices.VeldsparIskm3 = veldspar.average_price / 0.1;
+                var veldspar = items.First(x => x.type_id == 28432); // Veldspar
+                oreprices.Veldspar = veldspar.average_price / 100;
+                oreprices.VeldsparIskm3 = veldspar.average_price / 100 / 0.1;
                 
                 return oreprices;
             }
