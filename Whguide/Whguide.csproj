@@ -258,6 +258,8 @@
     <Content Include="Views\Home\OreAnoms.cshtml" />
     <Content Include="Views\Anomalies\OreAnoms\AverageFrontierDeposit.cshtml" />
     <Content Include="Views\Anomalies\OreAnoms\CommonPerimeterDeposit.cshtml" />
+    <Content Include="Views\Anomalies\OreAnoms\ExceptionalCoreDeposit.cshtml" />
+    <Content Include="Views\Anomalies\OreAnoms\InfrequentCoreDeposit.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
