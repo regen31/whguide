@@ -260,6 +260,12 @@
     <Content Include="Views\Anomalies\OreAnoms\CommonPerimeterDeposit.cshtml" />
     <Content Include="Views\Anomalies\OreAnoms\ExceptionalCoreDeposit.cshtml" />
     <Content Include="Views\Anomalies\OreAnoms\InfrequentCoreDeposit.cshtml" />
+    <Content Include="Views\Anomalies\OreAnoms\IsolatedCoreDeposit.cshtml" />
+    <Content Include="Views\Anomalies\OreAnoms\OrdinaryPerimeterDeposit.cshtml" />
+    <Content Include="Views\Anomalies\OreAnoms\RarifiedCoreDeposit.cshtml" />
+    <Content Include="Views\Anomalies\OreAnoms\UncommonCoreDeposit.cshtml" />
+    <Content Include="Views\Anomalies\OreAnoms\UnexceptionalFrontierDeposit.cshtml" />
+    <Content Include="Views\Anomalies\OreAnoms\UnusualCoreDeposit.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
