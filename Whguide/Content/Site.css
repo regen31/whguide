@@ -68,6 +68,8 @@
     }
     .summarytable{
         vertical-align: top;
+        float: right;
+        margin-right:10px;
         text-align: left;
         line-height: 1.5em;
     }
@@ -99,6 +101,7 @@
         display: inline-block;
         position: relative;
         background-color: rgba(0,0,0,0.7);
+        min-width: 1265px;
         margin-top: 10px;
         margin-left: 5px;
         padding: 10px 5px;
@@ -151,7 +154,7 @@
     .navigationcont {
     position: fixed;
     top: 100px;
-    left: 1200px;
+    left: 1450px;
     display: inline-block;
     text-align: center;
     background-color: rgba(0,0,0,0.5);

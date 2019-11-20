@@ -57,5 +57,17 @@ namespace Whguide.Controllers
         {
             return View(Prices.GetOrePrices());
         }
+
+        public ActionResult Search(Anomaly anomaly)
+        {
+            if (anomaly.Type == "combat")
+                return PartialView(anomaly.Name);
+            if (anomaly.Type == "gas")
+                return PartialView(anomaly.Name, Prices.GetGasPrices());
+            if (anomaly.Type == "ore")
+                return PartialView(anomaly.Name, Prices.GetOrePrices());
+            else
+                return PartialView();
+        }
     }
 }
